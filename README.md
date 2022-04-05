@@ -1,4 +1,4 @@
-# Welcome to your Jupyter Book
+# 👷 Hier staat straks de voorbereiding en inhoud van de workshop 👷
 
 This is a small sample book to give you a feel for how book content is
 structured.
