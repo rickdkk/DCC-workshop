@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown Files &#8212; Notebooks</title>
+    <title>0. Voorbereiding &#8212; Jupyter Notebooks</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystyles.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -55,8 +56,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo_dcc.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Zoeken" href="../search.html" />
-    <link rel="next" title="Content with notebooks" href="notebooks.html" />
-    <link rel="prev" title="👷 Hier staat straks de voorbereiding en inhoud van de workshop 👷" href="../README.html" />
+    <link rel="next" title="1. Notebooks" href="notebooks.html" />
+    <link rel="prev" title="👷 Workshop Jupyter Notebooks 👷" href="../README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="nl">
     
@@ -85,7 +86,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../_static/logo_dcc.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Notebooks</h1>
+      <h1 class="site-logo" id="site-title">Jupyter Notebooks</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -96,17 +97,22 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Markdown Files
+   0. Voorbereiding
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
-   Content with notebooks
+   1. Notebooks
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
+  <a class="reference internal" href="jupyter-lab.html">
+   2. Jupyter Lab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="olympics.html">
+   3. Data analyse
   </a>
  </li>
 </ul>
@@ -115,7 +121,7 @@ const thebe_selector_output = ".output, .cell_output"
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://wiki.surfnet.nl/display/DPO/DCC+Praktijkgericht+onderzoek">DCC-PO</a>
+  Onderdeel van het <a href="https://wiki.surfnet.nl/display/DPO/DCC+Praktijkgericht+onderzoek">DCC-PO</a>
 </div>
 
 </div>
@@ -150,7 +156,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/chapters/markdown.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/chapters/voorbereiding.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -170,7 +176,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/rickdkk/DCC-workshop/issues/new?title=Issue%20on%20page%20%2Fchapters/markdown.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/DCC-workshop/issues/new?title=Issue%20on%20page%20%2Fchapters/voorbereiding.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
         
@@ -197,23 +203,18 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
+  <a class="reference internal nav-link" href="#miniconda-installeren">
+   Miniconda installeren
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-roles-and-directivs">
-   Sample Roles and Directivs
+  <a class="reference internal nav-link" href="#installeer-pakketten">
+   Installeer pakketten
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#citations">
-   Citations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learn-more">
-   Learn more
+  <a class="reference internal nav-link" href="#bestanden">
+   Bestanden
   </a>
  </li>
 </ul>
@@ -226,7 +227,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Markdown Files</h1>
+                <h1>0. Voorbereiding</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -237,23 +238,18 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
+  <a class="reference internal nav-link" href="#miniconda-installeren">
+   Miniconda installeren
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sample-roles-and-directivs">
-   Sample Roles and Directivs
+  <a class="reference internal nav-link" href="#installeer-pakketten">
+   Installeer pakketten
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#citations">
-   Citations
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#learn-more">
-   Learn more
+  <a class="reference internal nav-link" href="#bestanden">
+   Bestanden
   </a>
  </li>
 </ul>
@@ -265,57 +261,112 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Permalink naar deze titel">¶</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<div class="section" id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink naar deze titel">¶</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
-</div>
-<div class="section" id="sample-roles-and-directivs">
-<h2>Sample Roles and Directivs<a class="headerlink" href="#sample-roles-and-directivs" title="Permalink naar deze titel">¶</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="voorbereiding">
+<h1>0. Voorbereiding<a class="headerlink" href="#voorbereiding" title="Permalink naar deze titel">¶</a></h1>
+<p>Er zijn een aantal verschillende manieren om Jupyter te gebruiken.
+Zo kan men Jupyter online draaien, bijv. op een cluster van SURF of in <a class="reference external" href="https://wiki.surfnet.nl/pages/viewpage.action?pageId=22413758">Research Drive</a>.
+Je kan het echter ook direct op je eigen computer installeren. Het voordeel is dat je dan leert hoe je het moet
+installeren en dat je het altijd later nog kan gebruiken. Het nadeel is dat het wat werk vooraf vereist. In dit geval
+gaan we voor een lokale installatie.</p>
+<p>Om Jupyter te installeren is een installatie van Python nodig. Mac en Linux hebben dat al voorgeïnstalleerd. Daarnaast
+zijn er nog wat losse pakketten nodig, waaronder Jupyter zelf. De meest eenvoudige manier om deze pakketten te
+installeren is met <strong>Miniconda</strong>, wel zo makkelijk!</p>
 <div class="admonition note">
 <p class="admonition-title">Notitie</p>
-<p>Here is a note</p>
+<p>Het is ook prima om in plaats van Miniconda gebruik te maken van Anaconda of ‘gewoon’ Python. Kies
+wat voor jou werkt.</p>
 </div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
+<div class="section" id="miniconda-installeren">
+<h2>Miniconda installeren<a class="headerlink" href="#miniconda-installeren" title="Permalink naar deze titel">¶</a></h2>
+<div class="tabbed-set docutils">
+<input checked="checked" id="bcc6531a-a188-4785-ab76-96b3b590a100" name="fcbb616a-f5e9-45f0-b612-edb2be07833a" type="radio">
+</input><label class="tabbed-label" for="bcc6531a-a188-4785-ab76-96b3b590a100">
+Windows</label><div class="tabbed-content docutils">
+<ol class="simple">
+<li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
+<li><p>Download het bestand <code class="docutils literal notranslate"><span class="pre">Miniconda3</span> <span class="pre">Windows</span> <span class="pre">64-bit</span></code> (of 32-bit op een oude computer).</p></li>
+<li><p>Zoek het bestand in je Downloads map en gebruik dubbel-klik om het bestand te openen.</p></li>
+<li><p>Gebruik voor alles de standaard instellingen.</p></li>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Prompt</span></code> vanuit het Windows start menu of zoek in de zoekbalk.</p></li>
+<li><p>Test of alles werkt met de volgende commando’s:</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
+</pre></div>
 </div>
-<div class="section" id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink naar deze titel">¶</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<p id="id2"><dl class="citation">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">HdHPK14</a></span></dt>
-<dd><p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</dd>
-</dl>
-</p>
+<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.7</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda --version
+</pre></div>
 </div>
-<div class="section" id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Permalink naar deze titel">¶</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
+<p>Als je geen error krijgt is het goed genoeg!</p>
+</div>
+<input id="d33996c4-7046-4367-bdaa-ac60345be0db" name="fcbb616a-f5e9-45f0-b612-edb2be07833a" type="radio">
+</input><label class="tabbed-label" for="d33996c4-7046-4367-bdaa-ac60345be0db">
+Mac</label><div class="tabbed-content docutils">
+<ol class="simple">
+<li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
+<li><p>Download het bestand Miniconda3 MacOSX 64-bit pkg*.</p></li>
+<li><p>Open het bestand en installeer Miniconda met de standaard instellingen.</p></li>
+<li><p>Open een <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> (Klik op Launchpad in het Dock en zoek naar “Terminal” in het zoekveld en klik
+vervolgens op ‘Terminal’).</p></li>
+<li><p>Test of alles werkt met de volgende commando’s:</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
+</pre></div>
+</div>
+<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.7</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda --version
+</pre></div>
+</div>
+<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
+<p>Als je geen error krijgt is het goed genoeg!</p>
+<p>*Voor Macs met een M1 architectuur moet je het M1 bestand downloaden. Om die te installeren
+kan je naar de instructies voor Linux kijken.</p>
+</div>
+<input id="1c6f4c0b-4bc4-4ba4-a6d1-398270fdd37f" name="fcbb616a-f5e9-45f0-b612-edb2be07833a" type="radio">
+</input><label class="tabbed-label" for="1c6f4c0b-4bc4-4ba4-a6d1-398270fdd37f">
+Linux</label><div class="tabbed-content docutils">
+<ol class="simple">
+<li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
+<li><p>Download het bestand Miniconda3 Linux 64-bit (of vergelijkbaar voor jouw architectuur).</p></li>
+<li><p>Voer het bestand uit in de terminal en installeer Miniconda met de standaard instellingen.</p></li>
+<li><p>Open een nieuwe terminal.</p></li>
+<li><p>Test of alles werkt met de volgende commando’s:</p></li>
+</ol>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
+</pre></div>
+</div>
+<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.7</span></code></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda --version
+</pre></div>
+</div>
+<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
+<p>Als je geen error krijgt is het goed genoeg!</p>
+</div>
+</div>
+</div>
+<div class="section" id="installeer-pakketten">
+<h2>Installeer pakketten<a class="headerlink" href="#installeer-pakketten" title="Permalink naar deze titel">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Je kan het commando kopiëren door je muis boven de code te zetten en op ‘Copy to clipboard’ te drukken.</p>
+</div>
+</div>
+<p>Python kan van zichzelf al heel veel, maar de echte kracht zit in het grote open-source ecosysteem. We gaan een paar
+van pakketten uit dat ecosysteem gebruiken in de workshop. Om die te installeren hebben we maar één commando nodig
+(moet je eens bedenken hoe lang het zou duren als we voor elk pakket een bestand moesten opzoeken, downloaden en
+installeren).
+Open de Anaconda Prompt op Windows of de Terminal in MacOS/Linux en run het volgende commando:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -y -c conda-forge seaborn sympy jupyterlab  
+</pre></div>
+</div>
+</div>
+<div class="section" id="bestanden">
+<h2>Bestanden<a class="headerlink" href="#bestanden" title="Permalink naar deze titel">¶</a></h2>
+<p>Download de bestanden voor de workshop 👷👷👷hier👷👷👷. Zet de bestanden neer op een voor jou logische plek.
+Maak hier bij voorkeur een nieuwe map voor aan waaruit je kan werken tijdens de workshop.</p>
 </div>
 </div>
 
@@ -348,13 +399,13 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">vorige</p>
-            <p class="prev-next-title">👷 Hier staat straks de voorbereiding en inhoud van de workshop 👷</p>
+            <p class="prev-next-title">👷 Workshop Jupyter Notebooks 👷</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="notebooks.html" title="volgende pagina">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">volgende</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">1. Notebooks</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

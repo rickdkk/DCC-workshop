@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>👷 Hier staat straks de voorbereiding en inhoud van de workshop 👷 &#8212; Notebooks</title>
+    <title>👷 Workshop Jupyter Notebooks 👷 &#8212; Jupyter Notebooks</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyles.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -55,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/logo_dcc.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Zoeken" href="search.html" />
-    <link rel="next" title="Markdown Files" href="chapters/markdown.html" />
+    <link rel="next" title="0. Voorbereiding" href="chapters/voorbereiding.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="nl">
     
@@ -84,7 +85,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/logo_dcc.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Notebooks</h1>
+      <h1 class="site-logo" id="site-title">Jupyter Notebooks</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -94,18 +95,23 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/markdown.html">
-   Markdown Files
+  <a class="reference internal" href="chapters/voorbereiding.html">
+   0. Voorbereiding
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="chapters/notebooks.html">
-   Content with notebooks
+   1. Notebooks
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/markdown-notebooks.html">
-   Notebooks with MyST Markdown
+  <a class="reference internal" href="chapters/jupyter-lab.html">
+   2. Jupyter Lab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chapters/olympics.html">
+   3. Data analyse
   </a>
  </li>
 </ul>
@@ -114,7 +120,7 @@ const thebe_selector_output = ".output, .cell_output"
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://wiki.surfnet.nl/display/DPO/DCC+Praktijkgericht+onderzoek">DCC-PO</a>
+  Onderdeel van het <a href="https://wiki.surfnet.nl/display/DPO/DCC+Praktijkgericht+onderzoek">DCC-PO</a>
 </div>
 
 </div>
@@ -190,6 +196,24 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorbereiding">
+   Voorbereiding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programma">
+   Programma
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -197,30 +221,95 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>👷 Hier staat straks de voorbereiding en inhoud van de workshop 👷</h1>
+                <h1>👷 Workshop Jupyter Notebooks 👷</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorbereiding">
+   Voorbereiding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programma">
+   Programma
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="hier-staat-straks-de-voorbereiding-en-inhoud-van-de-workshop">
-<h1>👷 Hier staat straks de voorbereiding en inhoud van de workshop 👷<a class="headerlink" href="#hier-staat-straks-de-voorbereiding-en-inhoud-van-de-workshop" title="Permalink naar deze titel">¶</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="workshop-jupyter-notebooks">
+<h1>👷 Workshop Jupyter Notebooks 👷<a class="headerlink" href="#workshop-jupyter-notebooks" title="Permalink naar deze titel">¶</a></h1>
+<p><strong>Wordt gesponsord door WP4 🚀</strong> versie 2022-04-06</p>
+<p>“The scientific paper is obsolete. Here’s what’s next.” stond in 2018 te lezen in The Atlantic. In deze workshop laat
+het Data Science Care Team zien wat de volgende stap in wetenschappelijke communicatie is: de notebook. Het is de grote
+innovatie inzake publiceren. Onderzoekers krijgen er de unieke mogelijkheid mee om narratief, visualisatie, en code te
+integreren.</p>
+<p>In de workshop introduceren we Jupyter Notebooks, de gebruikersinterface van JupyterLab, en laten we zien hoe notebooks
+kunnen bijdragen aan de reproduceerbaarheid van onderzoek.</p>
+<p>De workshop vereist geen voorkennis, maar een korte voorbereiding (~15 min) is wel nodig.</p>
+<div class="figure align-default" id="jupyter-fig">
+<a class="reference internal image-reference" href="_images/jupyter.svg"><img alt="_images/jupyter.svg" src="_images/jupyter.svg" width="75%" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Afbeelding door Scriberia voor The Turing Way community (CC-BY,
+<a class="reference external" href="https://zenodo.org/record/3695300#.YZftc07MJaQ">Zenodo</a>).</span><a class="headerlink" href="#jupyter-fig" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
+<div class="section" id="voorbereiding">
+<h2>Voorbereiding<a class="headerlink" href="#voorbereiding" title="Permalink naar deze titel">¶</a></h2>
+<p>Voor het meedoen aan de workshop is enige voorbereiding vereist! Zorg dat je dit hebt gedaan voor de aanvang van de
+workshop. Als je ergens tegenaan loopt kan je contact op nemen met <a class="reference external" href="mailto:r&#46;deklerk&#37;&#52;&#48;fontys&#46;nl">Rick</a>.</p>
+</div>
+<div class="section" id="programma">
+<h2>Programma<a class="headerlink" href="#programma" title="Permalink naar deze titel">¶</a></h2>
+<p>Het materiaal is bestemd voor een workshop met een groepsgrootte van 5 tot 15 personen, maar is ook te gebruiken voor
+zelfstudie.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tijd</p></th>
+<th class="head"><p>Topic/Doel</p></th>
+<th class="head"><p>Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>10 min</p></td>
+<td><p>Introductie 👋</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>10 min</p></td>
+<td><p>Bestaand project bekijken</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>10 min</p></td>
+<td><p>Introductie Jupyter Lab</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>10 min</p></td>
+<td><p><em>Pauze</em> ☕</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>10 min</p></td>
+<td><p>Introductie Python</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>10 min</p></td>
+<td><p>Afronden 👋</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="chapters/markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapters/notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapters/markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-</ul>
 </div>
 </div>
 
@@ -249,10 +338,10 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="chapters/markdown.html" title="volgende pagina">
+    <a class='right-next' id="next-link" href="chapters/voorbereiding.html" title="volgende pagina">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">volgende</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">0. Voorbereiding</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
