@@ -1,4 +1,4 @@
 #!/bin/bash
 rm -rf ./_build &&
-jb build ./ &&
+jb build . &&
 python replace_elements.py

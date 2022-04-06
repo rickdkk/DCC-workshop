@@ -1,11 +1,10 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Notebooks
+title: Jupyter Notebooks
 author: Rick de Klerk
 logo: figures/logo_dcc.png
 copyright: "2022, CC BY 4.0"
-exclude_patterns: [_build]
 only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
@@ -35,7 +34,7 @@ html:
   use_repository_button: true
   favicon: figures/logo_dcc.png  # A path to a favicon image
   home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar
-  extra_navbar: Powered by <a href="https://wiki.surfnet.nl/display/DPO/DCC+Praktijkgericht+onderzoek">DCC-PO</a>  # Will be displayed underneath the left navbar.
+  extra_navbar: Onderdeel van het <a href="https://wiki.surfnet.nl/display/DPO/DCC+Praktijkgericht+onderzoek">DCC-PO</a>  # Will be displayed underneath the left navbar.
 
 sphinx:
   config:

@@ -1,0 +1,10 @@
+/* Custom styles to mainly make everything Fontys purple */
+
+.bd-content .section table {
+    display: table;
+}
+
+.table td, .table th {
+    padding: .1rem;
+}
+
