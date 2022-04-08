@@ -3,8 +3,16 @@
 
 format: jb-book
 root: README
-chapters:
-- file: chapters/voorbereiding
-- file: chapters/notebooks
-- file: chapters/jupyter-lab
-- file: chapters/olympics
+parts:
+  - caption: Voorbereiding
+    chapters:
+      - file: chapters/voorbereiding
+  - caption: Workshop
+    chapters:
+      - file: chapters/notebooks
+      - file: chapters/jupyter-lab
+      - file: chapters/analysis
+  - caption: Bonus
+    chapters:
+      - file: chapters/research-drive
+

@@ -23,7 +23,7 @@ Afbeelding door Scriberia voor The Turing Way community (CC-BY,
 
 ## Voorbereiding
 
-Voor het meedoen aan de workshop is enige voorbereiding vereist! Zorg dat je dit hebt gedaan voor de aanvang van de 
+Voor het meedoen aan de workshop is enige voorbereiding vereist! Zorg dat je dit hebt gedaan *voor* de aanvang van de 
 workshop. Als je ergens tegenaan loopt kan je contact op nemen met [Rick](mailto:r.deklerk@fontys.nl).
 
 ## Programma
@@ -31,11 +31,11 @@ workshop. Als je ergens tegenaan loopt kan je contact op nemen met [Rick](mailto
 Het materiaal is bestemd voor een workshop met een groepsgrootte van 5 tot 15 personen, maar is ook te gebruiken voor
 zelfstudie.
 
-| Tijd   | Topic/Doel                | Link |
-|--------|---------------------------|------|
-| 10 min | Introductie 👋            |      |
-| 10 min | Bestaand project bekijken |      |
-| 10 min | Introductie Jupyter Lab   |      |
-| 10 min | *Pauze* ☕                 |      |
-| 10 min | Introductie Python        |      |
-| 10 min | Afronden 👋               |      |
+| Tijd   | Topic/Doel                | Links                              |
+|--------|---------------------------|------------------------------------|
+| 10 min | Introductie 👋            | {doc}`link <chapters/notebooks>`   |
+| 5 min  | Bestaand project bekijken |                                    |
+| 15 min | Introductie Jupyter Lab   | {doc}`link <chapters/jupyter-lab>` |
+| 10 min | *Pauze* ☕                 |                                    |
+| 15 min | Data analyse              | {doc}`link <chapters/analysis>`    |
+| 5 min  | Afronden 👋               |                                    |
