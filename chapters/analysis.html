@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>0. Voorbereiding &#8212; Jupyter Notebooks</title>
+    <title>3. Data analyse &#8212; Jupyter Notebooks</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -56,8 +56,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo_dcc.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Zoeken" href="../search.html" />
-    <link rel="next" title="1. Notebooks" href="notebooks.html" />
-    <link rel="prev" title="👷 Workshop Jupyter Notebooks 👷" href="../README.html" />
+    <link rel="next" title="Research Drive" href="research-drive.html" />
+    <link rel="prev" title="2. Jupyter Lab" href="jupyter-lab.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="nl">
     
@@ -99,9 +99,9 @@ const thebe_selector_output = ".output, .cell_output"
   Voorbereiding
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voorbereiding.html">
    0. Voorbereiding
   </a>
  </li>
@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
   Workshop
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    1. Notebooks
@@ -122,8 +122,8 @@ const thebe_selector_output = ".output, .cell_output"
    2. Jupyter Lab
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="analysis.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    3. Data analyse
   </a>
  </li>
@@ -180,7 +180,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/chapters/voorbereiding.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/chapters/analysis.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -200,7 +200,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/rickdkk/DCC-workshop/issues/new?title=Issue%20on%20page%20%2Fchapters/voorbereiding.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rickdkk/DCC-workshop/issues/new?title=Issue%20on%20page%20%2Fchapters/analysis.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open een probleem"><i class="fas fa-lightbulb"></i>open probleem</button></a>
         
@@ -221,24 +221,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Inhoud
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#miniconda-installeren-1-2">
-   Miniconda installeren (1/2)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installeer-pakketten-2-2">
-   Installeer pakketten (2/2)
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -246,135 +228,19 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>0. Voorbereiding</h1>
+                <h1>3. Data analyse</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Inhoud </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#miniconda-installeren-1-2">
-   Miniconda installeren (1/2)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#installeer-pakketten-2-2">
-   Installeer pakketten (2/2)
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="voorbereiding">
-<h1>0. Voorbereiding<a class="headerlink" href="#voorbereiding" title="Permalink naar deze titel">¶</a></h1>
-<p>Er zijn een aantal verschillende manieren om Jupyter te gebruiken.
-Zo kan men Jupyter online draaien, bijv. op een cluster van SURF of in <a class="reference external" href="https://wiki.surfnet.nl/pages/viewpage.action?pageId=22413758">Research Drive</a>.
-Je kan het echter ook direct op je eigen computer installeren. Het voordeel is dat je dan leert hoe je het moet
-installeren en dat je het altijd later nog kan gebruiken. Het nadeel is dat het wat werk vooraf vereist. In dit geval
-gaan we voor een lokale installatie.</p>
-<p>Om Jupyter te installeren is een installatie van Python nodig. Mac en Linux hebben dat al voorgeïnstalleerd. Daarnaast
-zijn er nog wat losse pakketten nodig, waaronder Jupyter zelf. De meest eenvoudige manier om deze pakketten te
-installeren is met <strong>Miniconda</strong>, wel zo makkelijk!</p>
-<div class="section" id="miniconda-installeren-1-2">
-<h2>Miniconda installeren (1/2)<a class="headerlink" href="#miniconda-installeren-1-2" title="Permalink naar deze titel">¶</a></h2>
-<div class="tabbed-set docutils">
-<input checked="checked" id="3ffafb34-c23a-4a13-b2c3-4d5b0a981c56" name="0ccdaf62-1876-4695-9e3d-9d020487ad3b" type="radio">
-</input><label class="tabbed-label" for="3ffafb34-c23a-4a13-b2c3-4d5b0a981c56">
-Windows</label><div class="tabbed-content docutils">
-<ol class="simple">
-<li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
-<li><p>Download het bestand <code class="docutils literal notranslate"><span class="pre">Miniconda3</span> <span class="pre">Windows</span> <span class="pre">64-bit</span></code> (of 32-bit op een oude computer).</p></li>
-<li><p>Zoek het bestand in je Downloads map en gebruik dubbel-klik om het bestand te openen.</p></li>
-<li><p>Gebruik voor alles de standaard instellingen.</p></li>
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">Anaconda</span> <span class="pre">Prompt</span></code> vanuit het Windows start menu of zoek in de zoekbalk.</p></li>
-<li><p>Test of alles werkt met de volgende commando’s (typ het commando en druk op enter):</p></li>
-</ol>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
-</pre></div>
-</div>
-<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.7</span></code></p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda --version
-</pre></div>
-</div>
-<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
-<p>Als je geen error krijgt is het goed genoeg!</p>
-</div>
-<input id="52b975bf-78d8-4281-8bca-0b73b25c5d3c" name="0ccdaf62-1876-4695-9e3d-9d020487ad3b" type="radio">
-</input><label class="tabbed-label" for="52b975bf-78d8-4281-8bca-0b73b25c5d3c">
-Mac</label><div class="tabbed-content docutils">
-<ol class="simple">
-<li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
-<li><p>Download het bestand Miniconda3 MacOSX 64-bit pkg*.</p></li>
-<li><p>Open het bestand en installeer Miniconda met de standaard instellingen.</p></li>
-<li><p>Open een <code class="docutils literal notranslate"><span class="pre">Terminal</span></code> (Klik op Launchpad in het Dock en zoek naar “Terminal” in het zoekveld en klik
-vervolgens op ‘Terminal’).</p></li>
-<li><p>Test of alles werkt met de volgende commando’s (typ het commando en druk op enter):</p></li>
-</ol>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
-</pre></div>
-</div>
-<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.7</span></code></p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda --version
-</pre></div>
-</div>
-<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
-<p>Als je geen error krijgt is het goed genoeg!</p>
-<p>*Voor Macs met een M1 architectuur moet je het M1 bestand downloaden. Om die te installeren
-kan je naar de instructies voor Linux kijken.</p>
-</div>
-<input id="238329fd-1dff-4397-8bae-7fb5684f98f8" name="0ccdaf62-1876-4695-9e3d-9d020487ad3b" type="radio">
-</input><label class="tabbed-label" for="238329fd-1dff-4397-8bae-7fb5684f98f8">
-Linux</label><div class="tabbed-content docutils">
-<ol class="simple">
-<li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
-<li><p>Download het bestand Miniconda3 Linux 64-bit (of vergelijkbaar voor jouw architectuur).</p></li>
-<li><p>Voer het bestand uit in de terminal en installeer Miniconda met de standaard instellingen.</p></li>
-<li><p>Open een nieuwe terminal.</p></li>
-<li><p>Test of alles werkt met de volgende commando’s (typ het commando en druk op enter):</p></li>
-</ol>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
-</pre></div>
-</div>
-<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.7</span></code></p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda --version
-</pre></div>
-</div>
-<p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
-<p>Als je geen error krijgt is het goed genoeg!</p>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Notitie</p>
-<p>Het is ook prima om in plaats van Miniconda gebruik te maken van Anaconda of ‘gewoon’ Python. Kies
-wat voor jou werkt.</p>
-</div>
-</div>
-<div class="section" id="installeer-pakketten-2-2">
-<h2>Installeer pakketten (2/2)<a class="headerlink" href="#installeer-pakketten-2-2" title="Permalink naar deze titel">¶</a></h2>
-<p>Python kan van zichzelf al heel veel, maar de echte kracht zit in het grote open-source ecosysteem. We gaan een paar
-van pakketten uit dat ecosysteem gebruiken in de workshop. Om die te installeren hebben we maar één commando nodig
-(moet je eens bedenken hoe lang het zou duren als we voor elk pakket een bestand moesten opzoeken, downloaden en
-installeren).
-Open de Anaconda Prompt op Windows of de Terminal in MacOS/Linux en run het volgende commando (typ of knip+plak het
-commando en druk op enter):</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda install -y -c conda-forge seaborn sympy jupyterlab  
-</pre></div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Je kan het commando kopiëren door je muis boven de code te zetten en op ‘Copy to clipboard’ te drukken.</p>
-</div>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-analyse">
+<h1>3. Data analyse<a class="headerlink" href="#data-analyse" title="Permalink naar deze titel">¶</a></h1>
 </div>
 
     <script type="text/x-thebe-config">
@@ -402,17 +268,17 @@ commando en druk op enter):</p>
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../README.html" title="vorige pagina">
+    <a class='left-prev' id="prev-link" href="jupyter-lab.html" title="vorige pagina">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">vorige</p>
-            <p class="prev-next-title">👷 Workshop Jupyter Notebooks 👷</p>
+            <p class="prev-next-title">2. Jupyter Lab</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="notebooks.html" title="volgende pagina">
+    <a class='right-next' id="next-link" href="research-drive.html" title="volgende pagina">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">volgende</p>
-        <p class="prev-next-title">1. Notebooks</p>
+        <p class="prev-next-title">Research Drive</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

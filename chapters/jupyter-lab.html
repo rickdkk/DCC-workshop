@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo_dcc.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Zoeken" href="../search.html" />
-    <link rel="next" title="3. Data analyse" href="olympics.html" />
+    <link rel="next" title="3. Data analyse" href="analysis.html" />
     <link rel="prev" title="1. Notebooks" href="notebooks.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="nl">
@@ -94,12 +94,24 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voorbereiding
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="voorbereiding.html">
    0. Voorbereiding
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Workshop
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="notebooks.html">
    1. Notebooks
@@ -111,8 +123,20 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="olympics.html">
+  <a class="reference internal" href="analysis.html">
    3. Data analyse
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bonus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="research-drive.html">
+   Research Drive
   </a>
  </li>
 </ul>
@@ -197,6 +221,51 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opstarten">
+   Opstarten
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vogelvlucht">
+   Vogelvlucht
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cellen">
+   Cellen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#command-en-edit-mode">
+     Command en edit mode
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-cellen">
+     Code cellen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown-cellen">
+     Markdown cellen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#snelkoppelingen">
+   Snelkoppelingen
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -209,6 +278,51 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#opstarten">
+   Opstarten
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vogelvlucht">
+   Vogelvlucht
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cellen">
+   Cellen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#command-en-edit-mode">
+     Command en edit mode
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-cellen">
+     Code cellen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown-cellen">
+     Markdown cellen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#snelkoppelingen">
+   Snelkoppelingen
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -217,6 +331,159 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-lab">
 <h1>2. Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink naar deze titel">¶</a></h1>
+<p>Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken.</p>
+<div class="section" id="opstarten">
+<h2>Opstarten<a class="headerlink" href="#opstarten" title="Permalink naar deze titel">¶</a></h2>
+<p>Om Jupyter Lab te starten moeten we het volgende commando in de Anaconda Prompt gebruiken:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter lab
+</pre></div>
+</div>
+<p>Vervolgens komt er een hele hoop tekst voorbij en opent er een nieuw tabblad in je browser (bijv.
+Firefox of Chrome). Als de browser niet opent kan je ook handmatig naar de URL <a class="reference external" href="http://localhost:8888/lab">http://localhost:8888/lab</a>
+gaan. Als het goed is zie je (na een tijdje) de Jupyter Lab interface.</p>
+</div>
+<div class="section" id="vogelvlucht">
+<h2>Vogelvlucht<a class="headerlink" href="#vogelvlucht" title="Permalink naar deze titel">¶</a></h2>
+<p>Het eerste wat je ziet als je Jupyter Lab opstart is de <strong>Launcher</strong>. Vanuit hier kan je een Notebook
+aanmaken, maar ook andere documenten zoals Text Files of Markdown Files. Het is ook mogelijk om een
+Terminal te starten. Als je bijvoorbeeld R of Julia hebt geïnstalleerd, dan kan je ook die kernels aanklikken.
+In beide gevallen moet je nog wel eerst een los pakket installeren.</p>
+<p>Bovenin zie je een klassieke <strong>Menu Bar</strong> met ‘File’, ‘Edit’, ‘View’, enzoverder. Het menu is vrij standaard en spreekt redelijk
+voor zich.</p>
+<p>Aan de linkerkant staat de ‘side bar’ met de <strong>File Browser</strong>. Hierin zie je de documenten en mappen in de map waarin je Jupyter
+Lab hebt opgestart.</p>
+<p>De optie onder de mappen zijn die van de <strong>Running Terminals and Kernels</strong>. Hier zie je welke programmeeromgevingen
+je allemaal hebt open staan in Jupyter. Je kan ze vanuit hier het overzicht houden en waar nodig een programma stoppen.</p>
+<p>Daaronder staat de <strong>Table of Contents</strong>. Als we straks kopjes toe gaan voegen in een notebook, kan je hier de structuur
+van het document zien en navigeren.</p>
+<p>Het laatste kopje is de <strong>Extension Manager</strong>. We kunnen extra functionaliteiten toevoegen met extensies. Een goed voorbeeld
+is de jupyterlab-git extensie die zorgt dat versiebeheer via Jupyter Lab kan. Dat gaan we vandaag niet doen, maar het is
+wel een krachtige toevoeging!</p>
+<p>Tot slot zien we onderin nog de <strong>Status Bar</strong>. Hier vinden we straks nuttige informatie over onze notebook.</p>
+</div>
+<div class="section" id="cellen">
+<h2>Cellen<a class="headerlink" href="#cellen" title="Permalink naar deze titel">¶</a></h2>
+<p>Laten we nu eerst een Notebook openen. Klik in de Launcher op de Python 3 Notebook. Als het goed is zie je nu een
+relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> extensie wordt gebruikt om notebooks aan te
+geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file.</p>
+<div class="section" id="command-en-edit-mode">
+<h3>Command en edit mode<a class="headerlink" href="#command-en-edit-mode" title="Permalink naar deze titel">¶</a></h3>
+<p>Als je nu rechts onderin kijkt op de Status Bar zie je dat we in <strong>Command Mode</strong> zitten. In deze modus kunnen we cellen
+toevoegen, verwijderen, en verplaatsen. Als je nu op <code class="docutils literal notranslate"><span class="pre">Enter</span></code> drukt kom je in de <strong>Edit Mode</strong>. Nu kan je wat typen in de
+cell.</p>
+</div>
+<div class="section" id="code-cellen">
+<h3>Code cellen<a class="headerlink" href="#code-cellen" title="Permalink naar deze titel">¶</a></h3>
+<p>Traditiegetrouw zullen we het volgende commando als eerst runnen:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Typ het commando in de cell en druk op <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>, hiermee run je de code en maak je direct een nieuwe cell aan.</p>
+<p>Zoals je ziet krijg je de output van de code direct onder de cell. Om aan te geven dat de cell is uitgevoerd en wanneer
+deze is uitgevoerd komt er een getal voor te staan.</p>
+</div>
+<div class="section" id="markdown-cellen">
+<h3>Markdown cellen<a class="headerlink" href="#markdown-cellen" title="Permalink naar deze titel">¶</a></h3>
+<p>De tweede belangrijke soort cellen zijn ‘markdown cellen’. Deze worden gebruikt om tekst toe te voegen aan de Notebook.
+Markdown is een tekstformat om documenten mee op te maken. Het voordeel van markdown is dat het erg veel lijkt op platte
+tekst, op veel plekken te gebruiken is, en in een avond te <a class="reference external" href="https://www.markdownguide.org/basic-syntax/">leren</a> is.
+Het document dat je nu voor je hebt, is ook geschreven in markdown!</p>
+<p>Om een markdown cell toe te voegen moeten we eerst naar Command Mode met <code class="docutils literal notranslate"><span class="pre">Esc</span></code>. We kunnen de cell omzetten naar een markdown
+cell door bovenin het uitklapmenu aan te klikken of door de shortcut <code class="docutils literal notranslate"><span class="pre">m</span></code> in te drukken. Door weer op <code class="docutils literal notranslate"><span class="pre">Enter</span></code> te drukken
+komen we met onze cursor weer in Edit Mode. Kopieer de volgende tekst losse cellen en voer deze uit:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Heading 1</span>
+
+<span class="gu">## Heading 2</span>
+
+<span class="gu">### Heading 3</span>
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Deze zin bevat <span class="gs">**dikgedrukte text**</span>.
+
+Deze zin bevat <span class="ge">*schuingedrukte tekst*</span>.
+
+Deze zin bevat <span class="gd">~~doorgestreepte tekst~~</span>.
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">Deze workshop gaat me tot nu toe echt goed af!</span>
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>$log_b(xy) = log_b(x) + log_b(y)$
+
+$F = G \frac{m_1m_2}{r^2}$
+
+$e^{i\pi} + 1 = 0$
+
+$g(x) = \int_0^\infty e^{-y^2} \, dy$
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">1.</span> Eerste item
+<span class="k">2.</span> Tweede item
+<span class="k">3.</span> Derde item
+<span class="k">4.</span> Vierde item 
+</pre></div>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>De workshop staat [<span class="nt">Hier</span>](<span class="na">https://rickdkk.github.io/DCC-workshop/</span>).
+
+![<span class="nt">Logo van het DCC</span>](<span class="na">https://rickdkk.github.io/DCC-workshop/_static/logo_dcc.png</span>)
+</pre></div>
+</div>
+<p>Kwam er uit wat je had verwacht?</p>
+</div>
+</div>
+<div class="section" id="snelkoppelingen">
+<h2>Snelkoppelingen<a class="headerlink" href="#snelkoppelingen" title="Permalink naar deze titel">¶</a></h2>
+<p>We hebben net de belangrijkste snelkoppelingen al voorbij zien komen. De meeste snelkoppelingen zijn bedoeld voor de
+Command Mode. Hieronder vind je de belangrijkste snelkoppelingen:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Snelkoppeling</p></th>
+<th class="head"><p>Modus</p></th>
+<th class="head"><p>Actie</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Enter</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Activeer Edit Mode</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Escape</span></code></p></td>
+<td><p>Edit</p></td>
+<td><p>Activeer Command Mode</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">a</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Voeg een cell boven toe</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">b</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Voeg een cell onder toe</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">dd</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Verwijder een cell</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">z</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Herstel een cell</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">c/v/x</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Kopiëren/Plakken/Snijden</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></td>
+<td><p>Edit</p></td>
+<td><p>Voer de cell uit</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></td>
+<td><p>Edit</p></td>
+<td><p>Voer de cell uit en maak een nieuwe</p></td>
+</tr>
+</tbody>
+</table>
+<p>Alle snelkopelingen zijn terug te vinden in de <strong>Advanced Settings Editor</strong> (<code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">,</span></code>) en staan achter alle commando’s
+in de menu’s zelf.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -251,7 +518,7 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">1. Notebooks</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="olympics.html" title="volgende pagina">
+    <a class='right-next' id="next-link" href="analysis.html" title="volgende pagina">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">volgende</p>
         <p class="prev-next-title">3. Data analyse</p>

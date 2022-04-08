@@ -94,12 +94,24 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Zoek in dit boek ..." aria-label="Zoek in dit boek ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voorbereiding
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="voorbereiding.html">
    0. Voorbereiding
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Workshop
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    1. Notebooks
@@ -111,8 +123,20 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="olympics.html">
+  <a class="reference internal" href="analysis.html">
    3. Data analyse
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bonus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="research-drive.html">
+   Research Drive
   </a>
  </li>
 </ul>
@@ -197,6 +221,49 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introductie">
+   Introductie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waarom-notebooks">
+   Waarom notebooks?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waarom-jupyter">
+   Waarom Jupyter?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wat-kan-ik-er-mee">
+   Wat kan ik er mee?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoe-werkt-het">
+   Hoe werkt het?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoe-kan-ik-mijn-werk-delen">
+   Hoe kan ik mijn werk delen?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoe-ziet-dit-eruit">
+   Hoe ziet dit eruit?
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -209,6 +276,49 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introductie">
+   Introductie
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waarom-notebooks">
+   Waarom notebooks?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waarom-jupyter">
+   Waarom Jupyter?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wat-kan-ik-er-mee">
+   Wat kan ik er mee?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoe-werkt-het">
+   Hoe werkt het?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoe-kan-ik-mijn-werk-delen">
+   Hoe kan ik mijn werk delen?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoe-ziet-dit-eruit">
+   Hoe ziet dit eruit?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -217,6 +327,49 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="notebooks">
 <h1>1. Notebooks<a class="headerlink" href="#notebooks" title="Permalink naar deze titel">¶</a></h1>
+<div class="section" id="introductie">
+<h2>Introductie<a class="headerlink" href="#introductie" title="Permalink naar deze titel">¶</a></h2>
+<p>Computational narrative</p>
+<p>Stukje geschiedenis</p>
+<p>Reproduceerbaarheid, samenwerken, herbruikbaarheid</p>
+</div>
+<div class="section" id="waarom-notebooks">
+<h2>Waarom notebooks?<a class="headerlink" href="#waarom-notebooks" title="Permalink naar deze titel">¶</a></h2>
+</div>
+<div class="section" id="waarom-jupyter">
+<h2>Waarom Jupyter?<a class="headerlink" href="#waarom-jupyter" title="Permalink naar deze titel">¶</a></h2>
+<p>Free en open source
+Agnostisch voor programmeertaal
+Veel gebruikt</p>
+</div>
+<div class="section" id="wat-kan-ik-er-mee">
+<h2>Wat kan ik er mee?<a class="headerlink" href="#wat-kan-ik-er-mee" title="Permalink naar deze titel">¶</a></h2>
+<p>Code
+Text
+Formules
+Plots
+Media
+Widgets
+Exporteren</p>
+</div>
+<div class="section" id="hoe-werkt-het">
+<h2>Hoe werkt het?<a class="headerlink" href="#hoe-werkt-het" title="Permalink naar deze titel">¶</a></h2>
+<p>Architectuur</p>
+</div>
+<div class="section" id="hoe-kan-ik-mijn-werk-delen">
+<h2>Hoe kan ik mijn werk delen?<a class="headerlink" href="#hoe-kan-ik-mijn-werk-delen" title="Permalink naar deze titel">¶</a></h2>
+<p>nbconvert
+nbviewer
+Voilà
+Binder
+Slideshows
+jupyterbook</p>
+</div>
+<div class="section" id="hoe-ziet-dit-eruit">
+<h2>Hoe ziet dit eruit?<a class="headerlink" href="#hoe-ziet-dit-eruit" title="Permalink naar deze titel">¶</a></h2>
+<p>Voorbeeld over gravitational waves studie</p>
+<p>Eigen voorbeeld</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
