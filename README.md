@@ -12,14 +12,14 @@ kunnen bijdragen aan de reproduceerbaarheid van onderzoek.
 
 De workshop vereist geen voorkennis, maar een korte voorbereiding (~15 min) is wel nodig.
 
-```{figure} ./figures/jupyter.svg
+:::{figure} ./figures/jupyter.svg
 ---
 width: 75%
 name: jupyter-fig
 ---
 Afbeelding door Scriberia voor The Turing Way community (CC-BY, 
 [Zenodo](https://zenodo.org/record/3695300#.YZftc07MJaQ)).
-```
+:::
 
 ## Voorbereiding
 

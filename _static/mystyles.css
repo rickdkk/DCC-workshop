@@ -1,5 +1,3 @@
-/* Custom styles to mainly make everything Fontys purple */
-
 .bd-content .section table {
     display: table;
 }
@@ -8,3 +6,14 @@
     padding: .1rem;
 }
 
+code {
+ white-space:nowrap;
+ max-width:100%;
+ font-size:85% !important;
+ background:rgba(var(--pst-color-preformatted-background),1);
+ border:1px solid #c9c9c9;
+ padding:0 5px;
+ overflow-x:auto;
+ box-shadow: 1px 1px 1px #d8d8d8;
+ border-radius: 3px;
+}

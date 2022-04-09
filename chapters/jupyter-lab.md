@@ -39,16 +39,19 @@ wel een krachtige toevoeging!
 
 Tot slot zien we onderin nog de **Status Bar**. Hier vinden we straks nuttige informatie over onze notebook. 
 
+:::{figure} ../figures/jupyter-lab-interface.png
+:::
+
 ## Cellen
 
 Laten we nu eerst een Notebook openen. Klik in de Launcher op de Python 3 Notebook. Als het goed is zie je nu een
-relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De `.ipynb` extensie wordt gebruikt om notebooks aan te 
+relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De **.ipynb** extensie wordt gebruikt om notebooks aan te 
 geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file.
 
 ### Command en edit mode
 
 Als je nu rechts onderin kijkt op de Status Bar zie je dat we in **Command Mode** zitten. In deze modus kunnen we cellen 
-toevoegen, verwijderen, en verplaatsen. Als je nu op `Enter` drukt kom je in de **Edit Mode**. Nu kan je wat typen in de 
+toevoegen, verwijderen, en verplaatsen. Als je nu op <buttonpress>Enter</buttonpress> drukt kom je in de **Edit Mode**. Nu kan je wat typen in de 
 cell. 
 
 ### Code cellen
