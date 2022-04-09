@@ -14,11 +14,11 @@ installeren is met **Miniconda**, wel zo makkelijk!
 
 :::{tabbed} Windows
 1. Open de website https://docs.conda.io/en/latest/miniconda.html in je browser.
-2. Download het bestand `Miniconda3 Windows 64-bit` (of 32-bit op een oude computer).
+2. Download het bestand **Miniconda3 Windows 64-bit** (of 32-bit op een oude computer).
 3. Zoek het bestand in je Downloads map en gebruik dubbel-klik om het bestand te openen.
 4. Gebruik voor alles de standaard instellingen.
-5. Open `Anaconda Prompt` vanuit het Windows start menu of zoek in de zoekbalk.
-6. Test of alles werkt met de volgende commando's (typ het commando en druk op enter):
+5. Open **Anaconda Prompt** vanuit het Windows start menu of zoek in de zoekbalk.
+6. Test of alles werkt met de volgende commando's (typ het commando en druk op `Enter`):
 
 ```shell
 python --version
@@ -36,9 +36,9 @@ Als je geen error krijgt is het goed genoeg!
 
 :::{tabbed} Mac
 1. Open de website https://docs.conda.io/en/latest/miniconda.html in je browser.
-2. Download het bestand Miniconda3 MacOSX 64-bit pkg\*.
+2. Download het bestand **Miniconda3 MacOSX 64-bit pkg**\*.
 3. Open het bestand en installeer Miniconda met de standaard instellingen.
-4. Open een `Terminal` (Klik op Launchpad in het Dock en zoek naar "Terminal" in het zoekveld en klik 
+4. Open een **Terminal** (Klik op Launchpad in het Dock en zoek naar "Terminal" in het zoekveld en klik 
 vervolgens op 'Terminal').
 5. Test of alles werkt met de volgende commando's (typ het commando en druk op enter):
 
@@ -60,10 +60,10 @@ kan je naar de instructies voor Linux kijken.
 
 :::{tabbed} Linux
 1. Open de website https://docs.conda.io/en/latest/miniconda.html in je browser.
-2. Download het bestand Miniconda3 Linux 64-bit (of vergelijkbaar voor jouw architectuur).
+2. Download het bestand &&Miniconda3 Linux 64-bit&& (of vergelijkbaar voor jouw architectuur).
 3. Voer het bestand uit in de terminal en installeer Miniconda met de standaard instellingen. 
 4. Open een nieuwe terminal.
-5. Test of alles werkt met de volgende commando's (typ het commando en druk op enter):
+5. Test of alles werkt met de volgende commando's (typ het commando en druk op `Enter`):
 
 ```shell
 python --version

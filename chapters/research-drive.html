@@ -220,6 +220,19 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Inhoud
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stappenplan">
+   Stappenplan
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -232,6 +245,19 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Inhoud </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stappenplan">
+   Stappenplan
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -240,6 +266,53 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="research-drive">
 <h1>Research Drive<a class="headerlink" href="#research-drive" title="Permalink naar deze titel">¶</a></h1>
+<p>Je kan Jupyter op je eigen computer gebruiken óf direct vanuit Research Drive (Pilot) met Jupyter Hub. Om Jupyter Hub te
+starten moet je op het Jupyter logo klikken in het menu van Research Drive.</p>
+<div class="section" id="stappenplan">
+<h2>Stappenplan<a class="headerlink" href="#stappenplan" title="Permalink naar deze titel">¶</a></h2>
+<p><strong>Stap 1: klik op Jupyter Hub in het Research Drive menu (linksboven)</strong></p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/RD_select.png"><img alt="../_images/RD_select.png" src="../_images/RD_select.png" style="width: 50%;" /></a>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Notitie</p>
+<p>Het kan zijn dat de optie bij jou (nog) niet beschikbaar is. Via het Research Drive Dashboard kan een Research Drive
+administrator de service voor een specifiek account aanzetten. Overleg dus met je Data Steward.</p>
+</div>
+<p><strong>Stap 2: kies een notebook configuratie</strong></p>
+<p>Men krijgt nu een aantal opties voor de omgeving in het ‘spawner’ scherm. Hier kun je kiezen uit verschillende
+configuraties voor je Notebooks (op volgorde van aantal features):</p>
+<ul class="simple">
+<li><p>Minimal notebook: minimale container</p></li>
+<li><p>R Notebook: met R en de tidyverse</p></li>
+<li><p>DataScience Notebook: met Python, R, Julia, én voorgeïnstalleerde pakketten</p></li>
+</ul>
+<div class="figure align-default">
+<img alt="../_images/RD_spawner.png" src="../_images/RD_spawner.png" />
+</div>
+<p>Elke container krijgt 2 cores en 2GB werkgeheugen. Als je niet weet welke je nodig hebt kan je het beste kiezen voor de
+<code class="docutils literal notranslate"><span class="pre">DataScience</span> <span class="pre">Notebook</span></code>, deze heeft de meeste features. Zit jouw favoriete pakket er niet tussen? Geen probleem, via de
+terminal of een notebook kun je altijd nog meer pakketten of een specifieke versie van een pakket installeren. Het is
+dan wel handig om de uiteindelijke configuratie op te slaan, bij het opnieuw opstarten van een server ben je de oude
+configuratie kwijt.</p>
+<p>Vervolgens krijg je een standaard Jupyter Notebook omgeving te zien, dat is een iets oudere omgeving dan Jupyter Lab.
+Voor wie bekend is met Jupyter is dit een vertrouwde omgeving. Je kunt in deze map notebooks aanmaken, maar de map
+verdwijnt weer als je Jupyter sluit! Daarom is het verstandig om je notebook aan te maken in een map op Research Drive
+zelf. Klik dus eerst op de map ‘work’ en kies daarna een locatie op jouw Research Drive:</p>
+<div class="figure align-default">
+<img alt="../_images/RD_jupyter.png" src="../_images/RD_jupyter.png" />
+</div>
+<p><strong>Stap 3: maak een notebook aan</strong></p>
+<p>Navigeer in de notebook omgeving naar de gewenste map in jouw Research Drive en maak een nieuwe notebook aan door te
+klikken op <code class="docutils literal notranslate"><span class="pre">New</span></code> en de kernel te selecteren die jij wilt (bijv. Python 3).</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/RD_kernel.png"><img alt="../_images/RD_kernel.png" src="../_images/RD_kernel.png" style="width: 60%;" /></a>
+</div>
+<p><strong>Stap 4: test of alles werkt</strong></p>
+<div class="figure align-default">
+<img alt="../_images/RD_test.png" src="../_images/RD_test.png" />
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

@@ -327,6 +327,13 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="notebooks">
 <h1>1. Notebooks<a class="headerlink" href="#notebooks" title="Permalink naar deze titel">¶</a></h1>
+<p>Een Jupyter Notebook is een open source interactieve ontwikkelomgeving die gebruikers in staat stelt om code te combineren
+met een verhaal. Een notebook kan live code, widgets, plots, narratieve tekst, vergelijkingen (LaTeX), afbeeldingen, en
+video bevatten. Zie hier een voorbeeld van een Jupyter Notebook (hier nog meer). Jupyter Notebooks zijn dus ideaal om een
+analyse inzichtelijk te maken voor je collega’s en voor jezelf over 6 maanden.</p>
+<p>Notebooks kunnen worden geëxporteerd naar HTML, reStructuredText, LaTeX, PDF, boeken (jupyter book), slide shows
+(reveal.js), en meer met nbconvert. Notebooks kunnen ook makkelijk gedeeld worden via nbviewer of GitHub/GitLab.
+Deze zijn allen in staat het notebook te renderen, zonder dat iemand hiervoor nog Jupyter Notebook hoeft te installeren.</p>
 <div class="section" id="introductie">
 <h2>Introductie<a class="headerlink" href="#introductie" title="Permalink naar deze titel">¶</a></h2>
 <p>Computational narrative</p>
@@ -355,6 +362,16 @@ Exporteren</p>
 <div class="section" id="hoe-werkt-het">
 <h2>Hoe werkt het?<a class="headerlink" href="#hoe-werkt-het" title="Permalink naar deze titel">¶</a></h2>
 <p>Architectuur</p>
+<p>Jupyter Notebook bestaat grofweg uit drie verschillende onderdelen:</p>
+<ul class="simple">
+<li><p>De notebook web applicatie: Een ontwikkelomgeving waarin notebooks bewerkt kunnen worden. Bestaande uit Jupyter
+Notebook én de nieuwere omgeving Jupyter Lab. Deze omgeving kan je zelf draaien óf via Fontys Research Drive.</p></li>
+<li><p>Kernels: Het onderdeel dat de code daadwerkelijk gaat uitvoeren en het resultaat teruggeeft aan de web applicatie.
+Elke notebook heeft een eigen kernel. Jupyter ondersteund tientallen programmeertalen, waaronder Julia, Python, en R
+(mede daarom ook de naam Jupyter).</p></li>
+<li><p>Notebook documenten: De notebooks zelf bevatten alle informatie die ook zichtbaar is in de web applicatie, inclusief
+input en output van berekeningen, en afbeeldingen.</p></li>
+</ul>
 </div>
 <div class="section" id="hoe-kan-ik-mijn-werk-delen">
 <h2>Hoe kan ik mijn werk delen?<a class="headerlink" href="#hoe-kan-ik-mijn-werk-delen" title="Permalink naar deze titel">¶</a></h2>
