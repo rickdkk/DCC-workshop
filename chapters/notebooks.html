@@ -180,9 +180,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/chapters/notebooks.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/chapters/notebooks.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download het bronbestand" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Afdrukken naar pdf"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -216,6 +216,23 @@ const thebe_selector_output = ".output, .cell_output"
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/rickdkk/DCC-workshop/main?urlpath=tree/chapters/notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Lancering Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -226,11 +243,6 @@ const thebe_selector_output = ".output, .cell_output"
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introductie">
-   Introductie
-  </a>
- </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#waarom-notebooks">
    Waarom notebooks?
@@ -282,11 +294,6 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introductie">
-   Introductie
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#waarom-notebooks">
    Waarom notebooks?
   </a>
@@ -327,65 +334,255 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="notebooks">
 <h1>1. Notebooks<a class="headerlink" href="#notebooks" title="Permalink naar deze titel">¶</a></h1>
-<p>Een Jupyter Notebook is een open source interactieve ontwikkelomgeving die gebruikers in staat stelt om code te combineren
-met een verhaal. Een notebook kan live code, widgets, plots, narratieve tekst, vergelijkingen (LaTeX), afbeeldingen, en
-video bevatten. Zie hier een voorbeeld van een Jupyter Notebook (hier nog meer). Jupyter Notebooks zijn dus ideaal om een
-analyse inzichtelijk te maken voor je collega’s en voor jezelf over 6 maanden.</p>
-<p>Notebooks kunnen worden geëxporteerd naar HTML, reStructuredText, LaTeX, PDF, boeken (jupyter book), slide shows
-(reveal.js), en meer met nbconvert. Notebooks kunnen ook makkelijk gedeeld worden via nbviewer of GitHub/GitLab.
-Deze zijn allen in staat het notebook te renderen, zonder dat iemand hiervoor nog Jupyter Notebook hoeft te installeren.</p>
-<div class="section" id="introductie">
-<h2>Introductie<a class="headerlink" href="#introductie" title="Permalink naar deze titel">¶</a></h2>
-<p>Computational narrative</p>
-<p>Stukje geschiedenis</p>
-<p>Reproduceerbaarheid, samenwerken, herbruikbaarheid</p>
+<p>Een Jupyter Notebook is een open source digitaal document en ontwikkelomgeving die gebruikers in staat stelt om data en
+code te combineren met een verhaal. Notebooks worden al sinds jaar en dag gebruikt om de opzet en uitkomsten van experimenten
+bij te houden en te communiceren met collega’s. Een mooi voorbeeld zijn de manen (✱) van Jupiter (⊛) zoals beschreven door Galileo in 1610 (<a class="reference internal" href="#moons"><span class="std std-numref">Fig. 2</span></a>),
+waar Jupyter Notebook mede zijn naam aan heeft te danken. Met Jupyter wordt het idee van de fysieke notebook met pen en papier gelanceerd
+naar de digitale wereld.</p>
+<div class="figure align-default" id="moons">
+<a class="reference internal image-reference" href="../_images/moons-of-jupyter.png"><img alt="../_images/moons-of-jupyter.png" src="../_images/moons-of-jupyter.png" style="width: 40%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Galileo’s manuscript uit 1610 met observaties van Jupyter (<a class="reference external" href="https://en.wikipedia.org/wiki/File:Galileo_Galilei_(1564_-_1642)_-_Serenissimo_Principe_-_manuscript_with_observations_of_Jupiter_and_four_of_its_moons,_1610.png">Public Domain</a>).</span><a class="headerlink" href="#moons" title="Permallink naar deze afbeelding">¶</a></p>
 </div>
 <div class="section" id="waarom-notebooks">
 <h2>Waarom notebooks?<a class="headerlink" href="#waarom-notebooks" title="Permalink naar deze titel">¶</a></h2>
+<p>Computational narrative</p>
+<p>Reproduceerbaarheid, samenwerken, herbruikbaarheid</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/reproduciblejourney.svg"><img alt="../_images/reproduciblejourney.svg" src="../_images/reproduciblejourney.svg" width="75%" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Reproduceerbaarheid door het delen van data, tools, code, en resultaten<a class="footnote-reference brackets" href="#journey" id="id1">1</a></span><a class="headerlink" href="#id4" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
 </div>
 <div class="section" id="waarom-jupyter">
 <h2>Waarom Jupyter?<a class="headerlink" href="#waarom-jupyter" title="Permalink naar deze titel">¶</a></h2>
-<p>Free en open source
-Agnostisch voor programmeertaal
-Veel gebruikt</p>
+<p>Een groot voordeel van Jupyter is dat het vrij en open source beschikbaar is. Hierdoor kan iedereen het installeren
+en kan dus ook iedereen met jouw project aan de slag. Dit is een groot voordeel ten opzichte van de grote spelers in het
+veld die voordat Jupyter actief was ook een Notebook variant aanboden. Om maximaal transparant te zijn is het belangrijk
+dat iedereen je data en code in kan zien en kan testen, zonder afhankelijk te zijn van dure licenties.</p>
+<p>Een ander voordeel is dat het te gebruiken is met meerdere programmeertalen. Het is zelfs mogelijk om binnen één Notebook
+meerdere talen te combineren. In praktijk worden Jupyter Notebooks het meest gebruikt in combinatie met de open source
+programmeertaal Python.</p>
+<p>Tot slot is Jupyter simpelweg het meest populaire format. Het voordeel hiervan is dat er veel tooling rondom Jupyter
+ontwikkeld wordt. Er is daardoor ook veel hulp beschikbaar op het internet. In andere woorden: het heeft een grote
+community.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/jupyter-logo.svg"><img alt="../_images/jupyter-logo.svg" src="../_images/jupyter-logo.svg" width="25%" /></a>
+</div>
 </div>
 <div class="section" id="wat-kan-ik-er-mee">
 <h2>Wat kan ik er mee?<a class="headerlink" href="#wat-kan-ik-er-mee" title="Permalink naar deze titel">¶</a></h2>
-<p>Code
-Text
-Formules
-Plots
-Media
-Widgets
-Exporteren</p>
+<p>In een (Jupyter) Notebook kan je verschillende elementen combineren om je data, tools, code, resultaten, en verhaal te
+delen. In het bovenstaande voorbeeld zie je twee notebooks uit de documentatie van Jupyter. Hierin zie je onder andere
+uitleg, formules, en code terugkomen. Door met de sliders te schuiven veranderd de afbeelding. Het vormt een krachtige
+manier om je analyses te communiceren.</p>
+<ul class="simple">
+<li><p><strong>Code:</strong> Jupyter ondersteund tientallen programmeertalen.</p></li>
+<li><p><strong>Text:</strong> Jupyter ondersteund markdown en HTML om je tekst mee op te maken.</p></li>
+<li><p><strong>Formules:</strong> Door gebruik te maken van LaTeX kan je formules toevoegen.</p></li>
+<li><p><strong>Plots:</strong> Met (interactieve) plots kan je inzicht geven in je data.</p></li>
+<li><p><strong>Media:</strong> Afbeeldingen, video’s, en audio kunnen allen verwerkt worden.</p></li>
+<li><p><strong>Widgets:</strong> Met interactieve widgets krijgen mensen echt gevoel voor je data.</p></li>
+</ul>
+<div class="figure align-default" id="id5">
+<img alt="../_images/notebook_examples.png" src="../_images/notebook_examples.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Jupyter Notebooks in Jupyter Lab.</span><a class="headerlink" href="#id5" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
 </div>
 <div class="section" id="hoe-werkt-het">
 <h2>Hoe werkt het?<a class="headerlink" href="#hoe-werkt-het" title="Permalink naar deze titel">¶</a></h2>
-<p>Architectuur</p>
-<p>Jupyter Notebook bestaat grofweg uit drie verschillende onderdelen:</p>
+<p>Als we het hebben over Jupyter dan spreken we grofweg over drie verschillende onderdelen:</p>
 <ul class="simple">
-<li><p>De notebook web applicatie: Een ontwikkelomgeving waarin notebooks bewerkt kunnen worden. Bestaande uit Jupyter
-Notebook én de nieuwere omgeving Jupyter Lab. Deze omgeving kan je zelf draaien óf via Fontys Research Drive.</p></li>
-<li><p>Kernels: Het onderdeel dat de code daadwerkelijk gaat uitvoeren en het resultaat teruggeeft aan de web applicatie.
+<li><p><strong>Notebooks:</strong> De Notebooks zelf bevatten alle informatie die ook zichtbaar is in de Jupyter applicatie. Alle input,
+output, berekeningen, en afbeeldingen staan opgeslagen in de Notebook file.</p></li>
+<li><p><strong>Jupyter Notebook/Lab:</strong> Jupyter Notebook en Jupyter Lab zijn de applicaties gemaakt door Project Jupyter om Notebooks
+mee op te maken. Het zijn dus programmeeromgevingen en staan los van het Notebook format.</p></li>
+<li><p><strong>Kernels:</strong> Het onderdeel dat de code daadwerkelijk gaat uitvoeren en het resultaat teruggeeft aan de web applicatie.
 Elke notebook heeft een eigen kernel. Jupyter ondersteund tientallen programmeertalen, waaronder Julia, Python, en R
 (mede daarom ook de naam Jupyter).</p></li>
-<li><p>Notebook documenten: De notebooks zelf bevatten alle informatie die ook zichtbaar is in de web applicatie, inclusief
-input en output van berekeningen, en afbeeldingen.</p></li>
 </ul>
+<p>Het mooie van deze modulaire aanpak is dat de kernel en de server op je eigen computer kunnen draaien of, bijvoorbeeld,
+op een supercomputer. Vervolgens kan je via je browser aan de slag alsof je op je eigen systeem werkt.</p>
+<div class="figure align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/notebook_components.png"><img alt="../_images/notebook_components.png" src="../_images/notebook_components.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">De Jupyter Notebook Interface<a class="footnote-reference brackets" href="#jupyter-docs" id="id2">2</a>.</span><a class="headerlink" href="#id6" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
 </div>
 <div class="section" id="hoe-kan-ik-mijn-werk-delen">
 <h2>Hoe kan ik mijn werk delen?<a class="headerlink" href="#hoe-kan-ik-mijn-werk-delen" title="Permalink naar deze titel">¶</a></h2>
-<p>nbconvert
-nbviewer
-Voilà
-Binder
-Slideshows
-jupyterbook</p>
+<p>Jupyter Notebooks zijn perfect om je werk mee te communiceren, maar niet iedereen heeft Jupyter op hun pc staan. Daarom
+zijn er verschillende manieren om Notebooks te delen:
+Notebooks kunnen worden geëxporteerd naar HTML, reStructuredText, LaTeX, PDF, boeken (jupyter book), slide shows
+(reveal.js), en meer met nbconvert. Notebooks kunnen ook makkelijk gedeeld worden via nbviewer of GitHub/GitLab.
+Deze zijn allen in staat het notebook te renderen, zonder dat iemand hiervoor nog Jupyter Notebook hoeft te installeren.</p>
+<ul class="simple">
+<li><p><strong>nbconvert:</strong> Notebooks kunnen worden geëxporteerd naar HTML, PDF, LaTeX, etc.</p></li>
+<li><p><strong>nbviewer:</strong> Notebooks kunnen worden weergeven op <a class="reference external" href="https://nbviewer.org/">https://nbviewer.org/</a> of direct op GitHub en GitLab.</p></li>
+<li><p><strong>Voilà:</strong> Notebooks met widgets kunnen als dashboard worden gebruikt, hiermee is je data interactief te bekijken.</p></li>
+<li><p><strong>Binder:</strong> Een hele omgeving kan gedeeld worden voor maximale reproduceerbaarheid.</p></li>
+<li><p><strong>Slideshows:</strong> Met reveal.js kunnen Notebooks omgezet worden naar een slideshow. Met RISE kan je code in je slides
+live uitvoeren.</p></li>
+<li><p><strong>jupyterbook:</strong> Meerdere Notebooks kunnen worden omgezet naar een boek dat offline (PDF) of online (deze site) te
+bekijken is.</p></li>
+</ul>
+<div class="figure align-default" id="id7">
+<img alt="../_images/reproducible_logbook.png" src="../_images/reproducible_logbook.png" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Reproduceerbare wetenschap met Jupyter en Binder<a class="footnote-reference brackets" href="#jupyter-docs" id="id3">2</a>.</span><a class="headerlink" href="#id7" title="Permallink naar deze afbeelding">¶</a></p>
+</div>
 </div>
 <div class="section" id="hoe-ziet-dit-eruit">
 <h2>Hoe ziet dit eruit?<a class="headerlink" href="#hoe-ziet-dit-eruit" title="Permalink naar deze titel">¶</a></h2>
-<p>Voorbeeld over gravitational waves studie</p>
-<p>Eigen voorbeeld</p>
+<p>Zoals dit. Het document waar je nu naar kijkt is gemaakt in een Jupyter Notebook. Ter demonstratie wat Python code:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_formats = [&#39;svg&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hier laden we een standaard dataset in uit Seaborn over de fooi die mensen geven in een restaurant:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">,</span> <span class="n">cache</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tips</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total_bill</th>
+      <th>tip</th>
+      <th>sex</th>
+      <th>smoker</th>
+      <th>day</th>
+      <th>time</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>16.99</td>
+      <td>1.01</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10.34</td>
+      <td>1.66</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>21.01</td>
+      <td>3.50</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>23.68</td>
+      <td>3.31</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>24.59</td>
+      <td>3.61</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tips</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 244 entries, 0 to 243
+Data columns (total 7 columns):
+ #   Column      Non-Null Count  Dtype   
+---  ------      --------------  -----   
+ 0   total_bill  244 non-null    float64 
+ 1   tip         244 non-null    float64 
+ 2   sex         244 non-null    category
+ 3   smoker      244 non-null    category
+ 4   day         244 non-null    category
+ 5   time        244 non-null    category
+ 6   size        244 non-null    int64   
+dtypes: category(4), float64(2), int64(1)
+memory usage: 7.4 KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hierboven zie je de eerste vijf samples uit de data (de head). Zoals je kunt zien is de data al in tidy (long) format. Daardoor kunnen we de data meteen plotten:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;pastel&quot;</span><span class="p">)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;smoker&quot;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;m&quot;</span><span class="p">,</span> <span class="s2">&quot;g&quot;</span><span class="p">],</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">trim</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/notebooks_19_0.svg" src="../_images/notebooks_19_0.svg" /></div>
+</div>
+<p>Wow, wat een plot 😍</p>
+<p>Jupyter had een grote ‘moment of fame’ toen de uitkomsten van de LIGO gravitational waves studie werden gedeeld met Jupyter
+Notebooks. Je kan met de data van LIGO oefenen in Jupyter op hun website <a class="reference external" href="https://www.gw-openscience.org/tutorials/">https://www.gw-openscience.org/tutorials/</a>.</p>
+<p>Een ander mooi voorbeeld is een Notebook van Peter Norvig (Director of Research bij Google): <a class="reference external" href="https://nbviewer.org/url/norvig.com/ipython/TSP.ipynb">The Traveling Salesperson Problem</a>
+over een klassiek probleem in de computerwetenschappen.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="journey"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>The Turing Way Community, &amp; Scriberia. (2021). Illustrations from the Turing Way book dashes. Zenodo. <a class="reference external" href="https://doi.org/10.5281/zenodo.5706310">https://doi.org/10.5281/zenodo.5706310</a></p>
+</dd>
+<dt class="label" id="jupyter-docs"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id3">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://docs.jupyter.org/en/latest/projects/architecture/content-architecture.html">https://docs.jupyter.org/en/latest/projects/architecture/content-architecture.html</a></p>
+</dd>
+</dl>
 </div>
 </div>
 

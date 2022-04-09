@@ -1,6 +1,7 @@
 # 2. Jupyter Lab
 
-Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken. 
+Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken. Er is vanuit project Jupyter nog een
+grafische omgeving, die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die bestaat.
 
 ## Opstarten
 
@@ -51,8 +52,8 @@ geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file
 ### Command en edit mode
 
 Als je nu rechts onderin kijkt op de Status Bar zie je dat we in **Command Mode** zitten. In deze modus kunnen we cellen 
-toevoegen, verwijderen, en verplaatsen. Als je nu op <buttonpress>Enter</buttonpress> drukt kom je in de **Edit Mode**. Nu kan je wat typen in de 
-cell. 
+toevoegen, verwijderen, en verplaatsen. Als je nu op `Enter` drukt kom je in de **Edit Mode**. 
+Nu kan je wat typen in de cell. 
 
 ### Code cellen
 Traditiegetrouw zullen we het volgende commando als eerst runnen:
@@ -75,7 +76,9 @@ Het document dat je nu voor je hebt, is ook geschreven in markdown!
 
 Om een markdown cell toe te voegen moeten we eerst naar Command Mode met `Esc`. We kunnen de cell omzetten naar een markdown
 cell door bovenin het uitklapmenu aan te klikken of door de shortcut `m` in te drukken. Door weer op `Enter` te drukken 
-komen we met onze cursor weer in Edit Mode. Kopieer de volgende tekst losse cellen en voer deze uit:
+komen we met onze cursor weer in Edit Mode. 
+
+**Opdracht: Kopieer de volgende tekst losse cellen en voer deze uit:**
 
 ```markdown
 # Heading 1

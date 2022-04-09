@@ -40,7 +40,7 @@ Als je geen error krijgt is het goed genoeg!
 3. Open het bestand en installeer Miniconda met de standaard instellingen.
 4. Open een **Terminal** (Klik op Launchpad in het Dock en zoek naar "Terminal" in het zoekveld en klik 
 vervolgens op 'Terminal').
-5. Test of alles werkt met de volgende commando's (typ het commando en druk op enter):
+5. Test of alles werkt met de volgende commando's (typ het commando en druk op `Enter`):
 
 ```shell
 python --version
@@ -90,7 +90,7 @@ van pakketten uit dat ecosysteem gebruiken in de workshop. Om die te installeren
 (moet je eens bedenken hoe lang het zou duren als we voor elk pakket een bestand moesten opzoeken, downloaden en
 installeren).
 Open de Anaconda Prompt op Windows of de Terminal in MacOS/Linux en run het volgende commando (typ of knip+plak het
-commando en druk op enter):
+commando en druk op `Enter`):
 
 ```shell
 conda install -y -c conda-forge seaborn sympy jupyterlab  

@@ -28,7 +28,7 @@ configuraties voor je Notebooks (op volgorde van aantal features):
 :::
 
 Elke container krijgt 2 cores en 2GB werkgeheugen. Als je niet weet welke je nodig hebt kan je het beste kiezen voor de 
-`DataScience Notebook`, deze heeft de meeste features. Zit jouw favoriete pakket er niet tussen? Geen probleem, via de 
+**DataScience Notebook**, deze heeft de meeste features. Zit jouw favoriete pakket er niet tussen? Geen probleem, via de 
 terminal of een notebook kun je altijd nog meer pakketten of een specifieke versie van een pakket installeren. Het is 
 dan wel handig om de uiteindelijke configuratie op te slaan, bij het opnieuw opstarten van een server ben je de oude 
 configuratie kwijt.
