@@ -1,23 +1,26 @@
 # 2. Jupyter Lab
 
+Nu we hebben gezien hoe Notebooks er uit zien en wat er allemaal mogelijk is maken we de transitie naar de ontwikkelomgeving.
 Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken. Er is vanuit project Jupyter nog een
-grafische omgeving, die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die bestaat.
+grafische omgeving, die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die bestaat. Verder is het 
+ook nog mogelijk om, bijvoorbeeld, vanuit PyCharm of VS Code met Notebooks te werken. Vandaag gaan we voor Jupyter Lab
+omdat dit een gebruiksvriendelijke omgeving is die specifiek ontwikkeld is voor Jupyter Notebooks.
 
 ## Opstarten
 
-Om Jupyter Lab te starten moeten we het volgende commando in de Anaconda Prompt gebruiken:
+Om Jupyter Lab te starten moeten we het volgende commando in de Anaconda Prompt (Windows) of Terminal (Mac/Linux) gebruiken:
 
 ```shell
 jupyter lab
 ```
 
-Vervolgens komt er een hele hoop tekst voorbij en opent er een nieuw tabblad in je browser (bijv. 
-Firefox of Chrome). Als de browser niet opent kan je ook handmatig naar de URL <http://localhost:8888/lab>
-gaan. Als het goed is zie je (na een tijdje) de Jupyter Lab interface.
+Vervolgens komt er een hele hoop tekst voorbij en opent er een nieuw tabblad in je browser (bijv. Firefox of Chrome). 
+Als de browser niet opent kan je ook handmatig naar de URL <http://localhost:8888/lab> gaan. Als het goed is zie je 
+(na een tijdje) de Jupyter Lab interface.
 
 ## Vogelvlucht
 
-Het eerste wat je ziet als je Jupyter Lab opstart is de **Launcher**. Vanuit hier kan je een Notebook
+Het eerste wat opvalt als je Jupyter Lab opstart is de **Launcher** ({numref}`user-interface-fig`). Vanuit hier kan je een Notebook
 aanmaken, maar ook andere documenten zoals Text Files of Markdown Files. Het is ook mogelijk om een 
 Terminal te starten. Als je bijvoorbeeld R of Julia hebt geïnstalleerd, dan kan je ook die kernels aanklikken.
 In beide gevallen moet je nog wel eerst een los pakket installeren.
@@ -41,13 +44,15 @@ wel een krachtige toevoeging!
 Tot slot zien we onderin nog de **Status Bar**. Hier vinden we straks nuttige informatie over onze notebook. 
 
 :::{figure} ../figures/jupyter-lab-interface.png
+:name: user-interface-fig
+De gebruikersinterface van Jupyter Lab.
 :::
 
 ## Cellen
 
-Laten we nu eerst een Notebook openen. Klik in de Launcher op de Python 3 Notebook. Als het goed is zie je nu een
-relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De **.ipynb** extensie wordt gebruikt om notebooks aan te 
-geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file.
+Laten we nu eerst een Notebook openen. Klik in de Launcher op de `Python 3` Notebook. Als het goed is zie je nu een
+relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De **.ipynb** extensie wordt gebruikt om notebooks aan 
+te geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file.
 
 ### Command en edit mode
 
@@ -134,8 +139,11 @@ Command Mode. Hieronder vind je de belangrijkste snelkoppelingen:
 | `dd`            | Command | Verwijder een cell                  |
 | `z`             | Command | Herstel een cell                    |
 | `c/v/x`         | Command | Kopiëren/Plakken/Snijden            |
+| `00`            | Command | Reset de kernel                     |
+| `Ctrl + b`      |         | Open/sluit het zijpaneel            |
 | `Ctrl + Enter`  | Edit    | Voer de cell uit                    |
 | `Shift + Enter` | Edit    | Voer de cell uit en maak een nieuwe |
 
+
 Alle snelkopelingen zijn terug te vinden in de **Advanced Settings Editor** (`Ctrl + ,`) en staan achter alle commando's
-in de menu's zelf. 
+in de menu's zelf.
