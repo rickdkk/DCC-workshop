@@ -331,21 +331,24 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-lab">
 <h1>2. Jupyter Lab<a class="headerlink" href="#jupyter-lab" title="Permalink naar deze titel">¶</a></h1>
-<p>Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken. Er is vanuit project Jupyter nog een
-grafische omgeving, die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die bestaat.</p>
+<p>Nu we hebben gezien hoe Notebooks er uit zien en wat er allemaal mogelijk is maken we de transitie naar de ontwikkelomgeving.
+Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken. Er is vanuit project Jupyter nog een
+grafische omgeving, die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die bestaat. Verder is het
+ook nog mogelijk om, bijvoorbeeld, vanuit PyCharm of VS Code met Notebooks te werken. Vandaag gaan we voor Jupyter Lab
+omdat dit een gebruiksvriendelijke omgeving is die specifiek ontwikkeld is voor Jupyter Notebooks.</p>
 <div class="section" id="opstarten">
 <h2>Opstarten<a class="headerlink" href="#opstarten" title="Permalink naar deze titel">¶</a></h2>
-<p>Om Jupyter Lab te starten moeten we het volgende commando in de Anaconda Prompt gebruiken:</p>
+<p>Om Jupyter Lab te starten moeten we het volgende commando in de Anaconda Prompt (Windows) of Terminal (Mac/Linux) gebruiken:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>jupyter lab
 </pre></div>
 </div>
-<p>Vervolgens komt er een hele hoop tekst voorbij en opent er een nieuw tabblad in je browser (bijv.
-Firefox of Chrome). Als de browser niet opent kan je ook handmatig naar de URL <a class="reference external" href="http://localhost:8888/lab">http://localhost:8888/lab</a>
-gaan. Als het goed is zie je (na een tijdje) de Jupyter Lab interface.</p>
+<p>Vervolgens komt er een hele hoop tekst voorbij en opent er een nieuw tabblad in je browser (bijv. Firefox of Chrome).
+Als de browser niet opent kan je ook handmatig naar de URL <a class="reference external" href="http://localhost:8888/lab">http://localhost:8888/lab</a> gaan. Als het goed is zie je
+(na een tijdje) de Jupyter Lab interface.</p>
 </div>
 <div class="section" id="vogelvlucht">
 <h2>Vogelvlucht<a class="headerlink" href="#vogelvlucht" title="Permalink naar deze titel">¶</a></h2>
-<p>Het eerste wat je ziet als je Jupyter Lab opstart is de <strong>Launcher</strong>. Vanuit hier kan je een Notebook
+<p>Het eerste wat opvalt als je Jupyter Lab opstart is de <strong>Launcher</strong> (<a class="reference internal" href="#user-interface-fig"><span class="std std-numref">Fig. 7</span></a>). Vanuit hier kan je een Notebook
 aanmaken, maar ook andere documenten zoals Text Files of Markdown Files. Het is ook mogelijk om een
 Terminal te starten. Als je bijvoorbeeld R of Julia hebt geïnstalleerd, dan kan je ook die kernels aanklikken.
 In beide gevallen moet je nog wel eerst een los pakket installeren.</p>
@@ -361,15 +364,16 @@ van het document zien en navigeren.</p>
 is de jupyterlab-git extensie die zorgt dat versiebeheer via Jupyter Lab kan. Dat gaan we vandaag niet doen, maar het is
 wel een krachtige toevoeging!</p>
 <p>Tot slot zien we onderin nog de <strong>Status Bar</strong>. Hier vinden we straks nuttige informatie over onze notebook.</p>
-<div class="figure align-default">
+<div class="figure align-default" id="user-interface-fig">
 <img alt="../_images/jupyter-lab-interface.png" src="../_images/jupyter-lab-interface.png" />
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">De gebruikersinterface van Jupyter Lab.</span><a class="headerlink" href="#user-interface-fig" title="Permallink naar deze afbeelding">¶</a></p>
 </div>
 </div>
 <div class="section" id="cellen">
 <h2>Cellen<a class="headerlink" href="#cellen" title="Permalink naar deze titel">¶</a></h2>
-<p>Laten we nu eerst een Notebook openen. Klik in de Launcher op de Python 3 Notebook. Als het goed is zie je nu een
-relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De <strong>.ipynb</strong> extensie wordt gebruikt om notebooks aan te
-geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file.</p>
+<p>Laten we nu eerst een Notebook openen. Klik in de Launcher op de <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> Notebook. Als het goed is zie je nu een
+relatief leeg scherm met één cell. Bovenin staat Untitled.ipynb. De <strong>.ipynb</strong> extensie wordt gebruikt om notebooks aan
+te geven. De data in het bestand zelf is tekst bestand in de vorm van een JSON file.</p>
 <div class="section" id="command-en-edit-mode">
 <h3>Command en edit mode<a class="headerlink" href="#command-en-edit-mode" title="Permalink naar deze titel">¶</a></h3>
 <p>Als je nu rechts onderin kijkt op de Status Bar zie je dat we in <strong>Command Mode</strong> zitten. In deze modus kunnen we cellen
@@ -475,6 +479,14 @@ Command Mode. Hieronder vind je de belangrijkste snelkoppelingen:</p>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">c/v/x</span></code></p></td>
 <td><p>Command</p></td>
 <td><p>Kopiëren/Plakken/Snijden</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">00</span></code></p></td>
+<td><p>Command</p></td>
+<td><p>Reset de kernel</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">b</span></code></p></td>
+<td><p></p></td>
+<td><p>Open/sluit het zijpaneel</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></td>
 <td><p>Edit</p></td>

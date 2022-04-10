@@ -278,25 +278,26 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="voorbereiding">
 <h1>0. Voorbereiding<a class="headerlink" href="#voorbereiding" title="Permalink naar deze titel">¶</a></h1>
 <p>Er zijn een aantal verschillende manieren om Jupyter te gebruiken.
-Zo kan men Jupyter online draaien, bijv. op een cluster van SURF of in <a class="reference external" href="https://wiki.surfnet.nl/pages/viewpage.action?pageId=22413758">Research Drive</a>.
+Zo kan men Jupyter online draaien, of bijvoorbeeld op een cluster (van SURF), of in <a class="reference external" href="https://wiki.surfnet.nl/pages/viewpage.action?pageId=22413758">Research Drive</a>.
 Je kan het echter ook direct op je eigen computer installeren. Het voordeel is dat je dan leert hoe je het moet
 installeren en dat je het altijd later nog kan gebruiken. Het nadeel is dat het wat werk vooraf vereist. In dit geval
-gaan we voor een lokale installatie.</p>
-<p>Om Jupyter te installeren is een installatie van Python nodig. Mac en Linux hebben dat al voorgeïnstalleerd. Daarnaast
-zijn er nog wat losse pakketten nodig, waaronder Jupyter zelf. De meest eenvoudige manier om deze pakketten te
-installeren is met <strong>Miniconda</strong>, wel zo makkelijk!</p>
+gaan we voor een lokale installatie op de laptop die je meeneemt naar de workshop.</p>
+<p>Om Jupyter te installeren is een installatie van Python nodig. Mac en Linux hebben dat al voorgeïnstalleerd, maar Windows
+helaas niet. Daarnaast zijn er nog wat losse pakketten nodig, waaronder Jupyter zelf. Om ervoor te zorgen dat iedereen
+met dezelfde versie werkt gaan we op alle platformen een losse installatie van Python doen. De meest eenvoudige manier om
+dit te doen en de benodigde pakketten te installeren is met <strong>Miniconda</strong>!</p>
 <div class="section" id="miniconda-installeren-1-2">
 <h2>Miniconda installeren (1/2)<a class="headerlink" href="#miniconda-installeren-1-2" title="Permalink naar deze titel">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="1057f551-62d4-4cf9-b98b-c60bed91fcf4" name="32d3fe73-2ca8-43ca-9239-563905573955" type="radio">
-</input><label class="tabbed-label" for="1057f551-62d4-4cf9-b98b-c60bed91fcf4">
+<input checked="checked" id="b5486fcc-f1c1-4341-9582-5081d3a13075" name="ca68d0c9-4c51-4df1-96df-eb0a871c1aa3" type="radio">
+</input><label class="tabbed-label" for="b5486fcc-f1c1-4341-9582-5081d3a13075">
 Windows</label><div class="tabbed-content docutils">
 <ol class="simple">
 <li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
 <li><p>Download het bestand <strong>Miniconda3 Windows 64-bit</strong> (of 32-bit op een oude computer).</p></li>
 <li><p>Zoek het bestand in je Downloads map en gebruik dubbel-klik om het bestand te openen.</p></li>
 <li><p>Gebruik voor alles de standaard instellingen.</p></li>
-<li><p>Open <strong>Anaconda Prompt</strong> vanuit het Windows start menu of zoek in de zoekbalk.</p></li>
+<li><p>Open <strong>Anaconda Prompt</strong> vanuit het Windows start menu of zoek het in de zoekbalk.</p></li>
 <li><p>Test of alles werkt met de volgende commando’s (typ het commando en druk op <code class="docutils literal notranslate"><span class="pre">Enter</span></code>):</p></li>
 </ol>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
@@ -307,17 +308,17 @@ Windows</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 <p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
-<p>Als je geen error krijgt is het goed genoeg!</p>
+<p>Als je geen error krijgt is de installatie gelukt!</p>
 </div>
-<input id="b04153e9-6d64-4f6f-9cba-ff91fcb3ccdc" name="32d3fe73-2ca8-43ca-9239-563905573955" type="radio">
-</input><label class="tabbed-label" for="b04153e9-6d64-4f6f-9cba-ff91fcb3ccdc">
+<input id="e725b6cb-884e-4b5a-a909-469945b98437" name="ca68d0c9-4c51-4df1-96df-eb0a871c1aa3" type="radio">
+</input><label class="tabbed-label" for="e725b6cb-884e-4b5a-a909-469945b98437">
 Mac</label><div class="tabbed-content docutils">
 <ol class="simple">
 <li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
 <li><p>Download het bestand <strong>Miniconda3 MacOSX 64-bit pkg</strong>*.</p></li>
 <li><p>Open het bestand en installeer Miniconda met de standaard instellingen.</p></li>
 <li><p>Open een <strong>Terminal</strong> (Klik op Launchpad in het Dock en zoek naar “Terminal” in het zoekveld en klik
-vervolgens op ‘Terminal’).</p></li>
+vervolgens op “Terminal”).</p></li>
 <li><p>Test of alles werkt met de volgende commando’s (typ het commando en druk op <code class="docutils literal notranslate"><span class="pre">Enter</span></code>):</p></li>
 </ol>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
@@ -328,19 +329,20 @@ vervolgens op ‘Terminal’).</p></li>
 </pre></div>
 </div>
 <p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
-<p>Als je geen error krijgt is het goed genoeg!</p>
-<p>*Voor Macs met een M1 architectuur moet je het M1 bestand downloaden. Om die te installeren
-kan je naar de instructies voor Linux kijken.</p>
+<p>Als je geen error krijgt is de installatie gelukt!</p>
+<p>*Voor Macs met een M1 architectuur moet je het M1 bestand downloaden. Om die te installeren kan je de instructies voor
+Linux volgen.</p>
 </div>
-<input id="4f4f52bb-cbd5-4c3f-976f-41df9fe00e56" name="32d3fe73-2ca8-43ca-9239-563905573955" type="radio">
-</input><label class="tabbed-label" for="4f4f52bb-cbd5-4c3f-976f-41df9fe00e56">
+<input id="9844b911-20fc-4929-8418-22266572ca39" name="ca68d0c9-4c51-4df1-96df-eb0a871c1aa3" type="radio">
+</input><label class="tabbed-label" for="9844b911-20fc-4929-8418-22266572ca39">
 Linux</label><div class="tabbed-content docutils">
 <ol class="simple">
 <li><p>Open de website <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a> in je browser.</p></li>
-<li><p>Download het bestand &amp;&amp;Miniconda3 Linux 64-bit&amp;&amp; (of vergelijkbaar voor jouw architectuur).</p></li>
-<li><p>Voer het bestand uit in de terminal en installeer Miniconda met de standaard instellingen.</p></li>
+<li><p>Download het bestand <strong>Miniconda3 Linux 64-bit</strong> (of vergelijkbaar voor jouw architectuur).</p></li>
+<li><p>Voer het bestand uit in de terminal met <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">Miniconda3-latest-Linux-x86_64.sh</span></code> (typ het commando en druk op <code class="docutils literal notranslate"><span class="pre">Enter</span></code>).</p></li>
+<li><p>Installeer Miniconda met de standaard instellingen.</p></li>
 <li><p>Open een nieuwe terminal.</p></li>
-<li><p>Test of alles werkt met de volgende commando’s (typ het commando en druk op <code class="docutils literal notranslate"><span class="pre">Enter</span></code>):</p></li>
+<li><p>Test of alles werkt met de volgende commando’s:</p></li>
 </ol>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python --version
 </pre></div>
@@ -350,7 +352,7 @@ Linux</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 <p>Op het moment van schrijven krijg ik hier: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">4.11.0</span></code></p>
-<p>Als je geen error krijgt is het goed genoeg!</p>
+<p>Als je geen error krijgt is de installatie gelukt!</p>
 </div>
 </div>
 <div class="admonition note">
@@ -362,8 +364,8 @@ wat voor jou werkt.</p>
 <div class="section" id="installeer-pakketten-2-2">
 <h2>Installeer pakketten (2/2)<a class="headerlink" href="#installeer-pakketten-2-2" title="Permalink naar deze titel">¶</a></h2>
 <p>Python kan van zichzelf al heel veel, maar de echte kracht zit in het grote open-source ecosysteem. We gaan een paar
-van pakketten uit dat ecosysteem gebruiken in de workshop. Om die te installeren hebben we maar één commando nodig
-(moet je eens bedenken hoe lang het zou duren als we voor elk pakket een bestand moesten opzoeken, downloaden en
+van de pakketten uit dat ecosysteem gebruiken in de workshop. Om die te installeren hebben we maar één commando nodig
+(moet je eens bedenken hoe lang het zou duren als we voor elk pakket een bestand online moesten opzoeken, downloaden, en
 installeren).
 Open de Anaconda Prompt op Windows of de Terminal in MacOS/Linux en run het volgende commando (typ of knip+plak het
 commando en druk op <code class="docutils literal notranslate"><span class="pre">Enter</span></code>):</p>
