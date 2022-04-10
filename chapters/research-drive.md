@@ -1,7 +1,7 @@
 # Research Drive
 
-Je kan Jupyter op je eigen computer gebruiken óf direct vanuit Research Drive (Pilot) met Jupyter Hub. Om Jupyter Hub te 
-starten moet je op het Jupyter logo klikken in het menu van Research Drive. 
+Je kan Jupyter op je eigen computer gebruiken óf direct vanuit Research Drive (Pilot) met Jupyter Hub[^SURF]. Om Jupyter 
+Hub te starten moet je op het Jupyter logo klikken in het menu van Research Drive. 
 
 ## Stappenplan
 
@@ -20,9 +20,9 @@ administrator de service voor een specifiek account aanzetten. Overleg dus met j
 
 Men krijgt nu een aantal opties voor de omgeving in het ‘spawner’ scherm. Hier kun je kiezen uit verschillende 
 configuraties voor je Notebooks (op volgorde van aantal features):
--    Minimal notebook: minimale container
--    R Notebook: met R en de tidyverse
--    DataScience Notebook: met Python, R, Julia, én voorgeïnstalleerde pakketten
+- **Minimal notebook:** minimale container met Python en alleen basis pakketten
+- **R Notebook:** met basis Python, en R met de tidyverse pakketten
+- **DataScience Notebook:** met Python, R, Julia, én voorgeïnstalleerde pakketten
 
 :::{figure} ../figures/RD_spawner.png
 :::
@@ -52,5 +52,9 @@ klikken op `New` en de kernel te selecteren die jij wilt (bijv. Python 3).
 
 **Stap 4: test of alles werkt**
 
+Hier volgt een uitgebreide test:
+
 :::{figure} ../figures/RD_test.png
 :::
+
+[^SURF]: Jupyter Notebooks (Pilot). https://wiki.surfnet.nl/pages/viewpage.action?pageId=22413758
