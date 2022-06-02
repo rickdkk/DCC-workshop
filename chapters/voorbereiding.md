@@ -1,7 +1,7 @@
 # 0. Voorbereiding
 
 Er zijn een aantal verschillende manieren om Jupyter te gebruiken.
-Zo kan men Jupyter online draaien, of bijvoorbeeld op een cluster (van SURF), of in [Research Drive](https://wiki.surfnet.nl/pages/viewpage.action?pageId=22413758). 
+Zo kan men Jupyter online draaien, of bijvoorbeeld op een cluster (van SURF), of in {doc}`Research Drive <./research-drive>`. 
 Je kan het echter ook direct op je eigen computer installeren. Het voordeel is dat je dan leert hoe je het moet 
 installeren en dat je het altijd later nog kan gebruiken. Het nadeel is dat het wat werk vooraf vereist. In dit geval 
 gaan we voor een lokale installatie op de laptop die je meeneemt naar de workshop.
