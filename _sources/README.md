@@ -4,8 +4,8 @@
 
 "The scientific paper is obsolete. Here's what's next." stond in 2018 te lezen in The Atlantic[^Somers]. In deze workshop laat 
 het Data Science Care Team zien wat de volgende stap in wetenschappelijke communicatie is: de notebook. Het is de grote 
-innovatie inzake publiceren. Onderzoekers krijgen er de unieke mogelijkheid mee om narratief, visualisatie, en code te 
-integreren.
+innovatie inzake dataverwerking, samenwerken, en publiceren. Onderzoekers krijgen er de unieke mogelijkheid mee om 
+narratief, visualisatie, en code te integreren.
 
 In de workshop introduceren we Jupyter Notebooks, de gebruikersinterface van JupyterLab, en laten we zien hoe notebooks 
 kunnen bijdragen aan de reproduceerbaarheid van onderzoek.
@@ -17,7 +17,7 @@ De workshop vereist geen voorkennis, maar een korte voorbereiding (~15 min) is w
 width: 75%
 name: jupyter-fig
 ---
-Afbeelding door Scriberia voor The Turing Way community[^Turing].
+Het Jupyter ecosysteem (Scriberia voor The Turing Way community[^Turing]).
 :::
 
 ## Voorbereiding

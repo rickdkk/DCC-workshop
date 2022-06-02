@@ -2,9 +2,9 @@
 
 Nu we hebben gezien hoe Notebooks er uit zien en wat er allemaal mogelijk is maken we de transitie naar de ontwikkelomgeving.
 Jupyter Lab is een grafische omgeving waarmee we Jupyter Notebooks kunnen opmaken. Er is vanuit project Jupyter nog een
-grafische omgeving, die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die bestaat. Verder is het 
-ook nog mogelijk om, bijvoorbeeld, vanuit PyCharm of VS Code met Notebooks te werken. Vandaag gaan we voor Jupyter Lab
-omdat dit een gebruiksvriendelijke omgeving is die specifiek ontwikkeld is voor Jupyter Notebooks.
+grafische omgeving (Jupyter Notebook), die gaan we vandaag niet gebruiken, maar het is wel goed om te weten dat die 
+bestaat. Verder is het ook nog mogelijk om, bijvoorbeeld, vanuit PyCharm of VS Code met Notebooks te werken. Vandaag gaan
+we voor Jupyter Lab omdat dit een gebruiksvriendelijke omgeving is die specifiek ontwikkeld is voor Jupyter Notebooks.
 
 ## Opstarten
 
